@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <title>Ejemplo de Formulario</title>
+    <script src="JS/validacion.js" ></script>
+</head>
+<body>
+    <div class="container-fluid" >
+        <div class="formulario" >
+            <div class="d-flex justify-content-center">
+                <h4 style="text-shadow: 1px 1px rgb(133, 21, 118);">Iniciar Sesión</h4>
+            </div>
+          <form  class="formulario" method="post" name="formulario" onsubmit="return validar(this)">
+                <br>
+                <label class="label"> Usuario: </label>
+                <br>
+                <input class="form-control" type="text" name="usuario" id ="nombre" 
+                class="input-name">
+                <br>
+                <label class="label"> Contraseña: </label>
+                <input class="form-control" type="password" name="contraseña" id ="nombre" 
+                class="input-name">
+                <br>
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-primary" type="submit" name="enviar" value="Ingresar">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="./css/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,46 @@
+*{
+    max-width: 100%;
+    max-height: 100%;
+    color:whitesmoke;
+    text-decoration-color: blueviolet;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing:auto;
+font-kerning: auto;
+}
+html{
+    @media screen(max-width:1980px) {
+        .facet_sidebar {
+            display: none;
+          }
+    }
+}
+body{
+    background-image:url("../img/wallpapersden.com_cool-4k-pattern_3840x2160.jpg");
+    background-size:100%;
+    background-repeat:no-repeat ;
+    background-origin: padding-box;
+    
+}
+.formulario{
+    background-color: rgba(31, 28, 28, 0.849);
+    background-blend-mode:darken;
+    max-width: 50%;
+    max-height: 20%;
+    text-align:justify;
+    padding: 2%;
+    margin: 5% 0% 25% 25%;
+}
+.container{
+        background-color: rgba(31, 28, 28, 0.849);
+        background-blend-mode:darken;
+        max-width: 100%;
+        max-height: 100%;
+        text-align:justify;
+        padding: 2%;
+        margin: 5% 0% 25% 25%;
+    }
+
+a:link,a:visited{
+    outline-style: none;
+    text-decoration: none;
+}
