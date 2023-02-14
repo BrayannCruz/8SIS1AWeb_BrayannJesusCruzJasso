@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <title>Practica 10 - Utilidades</title>
+    <script src="../JS/validacion.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col col-4">
+                <h1 class="text-light">Practica 10 - Utilidades</h1>
+            </div>
+            <div class="col col-4">
+
+            </div>
+            <div class="col col-4 d-flex justify-content-end">
+                <button class="btn btn-info"><a class="text-light" href="../practicas.html">Volver al menú</a></button>
+            </div>
+        </div>
+        
+        <form class="form-control bg-dark ">
+            <div class="title mt-5 d-flex justify-content-center">
+                <h4>Calcula utilidades correspondientes</h4>
+            </div>
+            <div class="inv_form">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Ingrese su sueldo mensual</span>
+                    <input type="number" id="sueldomensual" name="sueldomensual" class="form-control" aria-label="sueldomensual">
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Tiempo laborando en la empresa</span>
+                    <select class="text-dark" id="tiempo" name="tiempo">
+                        <option class="text-dark" value="1">Menos de un año</option>
+                        <option class="text-dark" value="2">1 año o mas y menos que 2 años</option>
+                        <option class="text-dark" value="3">2 años o mas y menos de 5 años</option>
+                        <option class="text-dark" value="4">5 años o mas y menos de 10 años</option>
+                        <option class="text-dark" value="5">10 años o más	</option>
+                    </select>
+                    <input type="text" id="tiempo" name="tiempo" class="form-control">
+                </div>
+                <br>
+                <div class="row g-1 d-flex justify-content-end">
+                    <div class="col-8">
+                        <div class="text-light">
+                            <span id="resultado"></span>
+                        </div>
+                    </div>
+                    <div class="col-auto ">
+                        <input type="button" class="btn btn-info" onclick="calculoutilidades()" value="Calcular">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../css/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+</html>

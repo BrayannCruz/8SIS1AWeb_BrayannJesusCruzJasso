@@ -7,18 +7,21 @@
     font-optical-sizing:auto;
 font-kerning: auto;
 }
+
 html{
     @media screen(max-width:1980px) {
         .facet_sidebar {
-            display: none;
+            display:;
           }
     }
 }
 body{
+    
     background-image:url("../img/wallpapersden.com_cool-4k-pattern_3840x2160.jpg");
     background-size:100%;
-    background-repeat:no-repeat ;
-    background-origin: padding-box;
+    height:fit-content;
+    background-origin: border-box;
+    
     
 }
 .formulario{
@@ -43,4 +46,13 @@ body{
 a:link,a:visited{
     outline-style: none;
     text-decoration: none;
+}
+.inv_form{
+    border: none;
+    width: 100%;
+    padding:4% 30% 0% 30%;    
+}
+.input_text{
+    border: none;
+    overflow: none;
 }

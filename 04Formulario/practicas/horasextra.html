@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <title>Practica 9 - Horas Extra</title>
+    <script src="../JS/validacion.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col col-4">
+                <h1 class="text-light">Practica 9 - Horas Extra</h1>
+            </div>
+            <div class="col col-4">
+
+            </div>
+            <div class="col col-4 d-flex justify-content-end">
+                <button class="btn btn-info"><a class="text-light" href="../practicas.html">Volver al menú</a></button>
+            </div>
+        </div>
+        
+        <form class="form-control bg-dark ">
+            <div class="title mt-5 d-flex justify-content-center">
+                <h4>Calcula sueldo por horas extra</h4>
+            </div>
+            <div class="inv_form">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Ingrese las horas normales trabajadas</span>
+                    <input type="number" id="hnt" name="hnt" class="form-control" aria-label="hnt">
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Ingrese las horas extra que trabajo</span>
+                    <input type="number" id="he" name="he" class="form-control" aria-label="he">
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Ingrese su sueldo por hora</span>
+                    <input type="number" id="sxh" name="sxh" class="form-control" aria-label="sxh">
+                </div>
+                <br>
+                <div class="row g-1 d-flex justify-content-end">
+                    <div class="col-6">
+                        <div class="text-light">
+                            <span id="resultado"></span>
+                        </div>
+                    </div>
+                    <div class="col-auto ">
+                        <input type="button" class="btn btn-info" onclick="calculahorasextra()" value="Calcular">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../css/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+</html>
